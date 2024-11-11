@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="waterdrop.png" alt="Water Drop" class="header-icon">
+            <img src="palace.png" alt="Palace" class="header-icon">
+            <img src="theater.png" alt="Theater Sign" class="header-icon">
+        </div>
+        <h1>Random Prompt Generator</h1>
+        <div class="randomizer" id="tropeRandomizer">
+            <h2 style="background-color: #d6c4a1;">Trope Randomizer</h2>
+            <button id="generatePromptBtn">Generate Trope</button>
+            <div id="randomPrompt">Trope: -</div>
+        </div>
+
+        <div class="randomizer" id="gestureRandomizer">
+            <h2 style="background-color: #e0d0b0;">Gesture Randomizer</h2>
+            <button id="generateGestureBtn">Generate Gesture</button>
+            <div id="gesturePrompt">Gesture: -</div>
+        </div>
+
+        <div class="randomizer" id="emotionRandomizer">
+            <h2 style="background-color: #d9c8a0;">Emotion Randomizer</h2>
+            <button id="generateEmotionBtn">Generate Emotion</button>
+            <div id="emotionPrompt">Emotion: -</div>
+        </div>
+
+        <div class="randomizer" id="voiceRandomizer">
+            <h2 style="background-color: #d8c9a3;">Voice Randomizer</h2>
+            <button id="generateVoiceBtn">Generate Voice</button>
+            <div id="voicePrompt">Voice: -</div>
+        </div>
+
+        <div class="randomizer" id="favoriteRandomizer">
+            <h2 style="background-color: #d6bda1;">Favorite Trope Randomizer</h2>
+            <button id="generateFavoriteBtn">Generate Favorite Trope</button>
+            <div id="favoritePrompt">Favorite Trope: -</div>
+        </div>
+
+        <div class="randomizer" id="referencesRandomizer">
+            <h2 style="background-color: #e4c7b0;">References - Misinterpret Randomizer</h2>
+            <button id="generateReferencesBtn">Generate Reference</button>
+            <div id="referencePrompt">Reference: -</div>
+        </div>
+
+        <div class="randomizer" id="secretsRandomizer">
+            <h2 style="background-color: #d5b69f;">Secrets Randomizer</h2>
+            <button id="generateSecretsBtn">Generate Secret</button>
+            <div id="secretPrompt">Secret: -</div>
+        </div>
+
+        <div class="randomizer" id="timerRandomizer">
+            <h2 style="background-color: #e0d6b5;">Timer</h2>
+            <button id="timerBtn">Open Timer</button>
+            <div id="timerWindow" style="display:none;">
+                <input type="number" id="interval" placeholder="Minutes" />
+                <button id="startTimerBtn">Start Timer</button>
+                <button id="closeTimerBtn">Close Timer</button>
+                <div id="timerMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bellSound" src="bell.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
